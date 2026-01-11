@@ -1,0 +1,25 @@
+
+{
+  "manifest_version": 3,
+  "name": "Dino-Verse: Evolved",
+  "version": "1.0",
+  "description": "A cyberpunk dinosaur survival game that replaces your new tab with an AI-enhanced experience.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "512": "icon512.png"
+  },
+  "action": {
+    "default_title": "Play Dino-Verse"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'unsafe-eval' https://cdn.tailwindcss.com https://esm.sh; object-src 'self'"
+  }
+}
